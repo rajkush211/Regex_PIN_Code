@@ -1,3 +1,4 @@
+
 #!/bin/bash -x
 
 #Description: Regex pattern to validate PIN Code.
@@ -12,7 +13,7 @@ pinCode=0
 
 function validatePinCode() {
 	local pin=$1
-	local regexPattern="^[1-9]{1}[0-9]{5}"
+	local regexPattern="^[1-9]{1}[0-9]{5}$"
 	if [[ $pin =~ $regexPattern ]]
 	then
 		echo "Valid"
